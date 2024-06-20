@@ -1,0 +1,68 @@
+/* Resetting some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dropdown {
+    margin-bottom: 15px;
+}
+
+/* Styling the dropdown */
+.dropdown select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-appearance: none; /* Removes default arrow in Safari */
+    -moz-appearance: none; /* Removes default arrow in Firefox */
+    appearance: none; /* Removes default arrow in other browsers */
+}
+
+.dropdown select:focus {
+    outline: none;
+    border-color: #3498db; /* Highlight border color on focus */
+}
+
+/* Style for the dropdown arrow */
+.dropdown select::-ms-expand {
+    display: none; /* Hide default arrow in IE 10+ */
+}
+
+/* Custom arrow for the dropdown */
+.dropdown select::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Hover effect for dropdown */
+.dropdown select:hover {
+    border-color: #95a5a6; /* Change border color on hover */
+}
